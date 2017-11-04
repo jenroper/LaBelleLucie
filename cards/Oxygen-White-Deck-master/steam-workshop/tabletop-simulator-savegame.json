@@ -1,0 +1,5945 @@
+{
+  "SaveName": "Oxygen White Deck v1.1",
+  "GameMode": "Oxygen White Deck",
+  "Date": "5/19/2016 7:33:14 PM",
+  "Table": "Table_RPG",
+  "Sky": "Sky_Downtown",
+  "Note": "",
+  "Rules": "",
+  "PlayerTurn": "",
+  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
+  "LuaScriptState": "",
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 0.5,
+    "ySize": 0.5,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hidding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": -15.1107731,
+          "posY": 4.81034231,
+          "posZ": -20.1076221,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 11.771986,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -30.2150211,
+          "posY": 4.81034231,
+          "posZ": 10.17524,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6554251,
+          "scaleY": 9.174497,
+          "scaleZ": 4.919951
+        }
+      },
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": 30.2511711,
+          "posY": 4.81034231,
+          "posZ": 9.59069252,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6554193,
+          "scaleY": 9.174497,
+          "scaleZ": 4.919951
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": 15.4749184,
+          "posY": 4.81034231,
+          "posZ": 19.8365288,
+          "rotX": 0.0,
+          "rotY": 179.8,
+          "rotZ": 0.0,
+          "scaleX": 11.7719727,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123775
+        }
+      },
+      {
+        "Color": "White",
+        "Transform": {
+          "posX": 15.1961212,
+          "posY": 4.81034231,
+          "posZ": -20.1400986,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 11.7719679,
+          "scaleY": 9.17449951,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Green",
+        "Transform": {
+          "posX": -15.1927719,
+          "posY": 4.81034231,
+          "posZ": 19.787817,
+          "rotX": 0.0,
+          "rotY": 180.000092,
+          "rotZ": 0.0,
+          "scaleX": 11.7719679,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Pink",
+        "Transform": {
+          "posX": 30.1035728,
+          "posY": 4.81034231,
+          "posZ": -8.449126,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6554174,
+          "scaleY": 9.174497,
+          "scaleZ": 4.919951
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -30.247818,
+          "posY": 4.81034231,
+          "posZ": -8.822588,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 11.65543,
+          "scaleY": 9.174497,
+          "scaleZ": 4.919951
+        }
+      }
+    ]
+  },
+  "DrawImage": "iVBORw0KGgoAAAANSUhEUgAAAWAAAADQCAYAAAA53LuNAAAFFElEQVR4Ae3QgQAAAADDoPlTH+SFUGHAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy8DQx5DAABHyNK3wAAAABJRU5ErkJggg==",
+  "VectorLines": [],
+  "ObjectStates": [
+    {
+      "Name": "3DText",
+      "Transform": {
+        "posX": 0.0497627631,
+        "posY": 0.9611348,
+        "posZ": 14.5167437,
+        "rotX": 90.0,
+        "rotY": 359.917023,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Text": {
+        "Text": "Oxygen White Deck v1.1",
+        "colorstate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0
+        },
+        "fontSize": 150
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3f2812"
+    },
+    {
+      "Name": "3DText",
+      "Transform": {
+        "posX": 0.03671177,
+        "posY": 0.9611348,
+        "posZ": 10.49634,
+        "rotX": 90.0,
+        "rotY": 359.917023,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Text": {
+        "Text": "This deck was created by Eugene Trounev for KDE.\nReleased into the public domain in 2012.\nUpdated by Charlie Dobbie in 2016.\n\n◀   Right click one of these decks and Save to Chest   ▶\nLoad into any game via Chest → Saved Objects\n\n(The full card set is displayed below.)",
+        "colorstate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0
+        },
+        "fontSize": 64
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e1a6af"
+    },
+    {
+      "Name": "DeckCustom",
+      "Transform": {
+        "posX": 12.5000648,
+        "posY": 1.26030266,
+        "posZ": 5.507495,
+        "rotX": 1.088593E-07,
+        "rotY": 179.971,
+        "rotZ": 180.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "ContainedObjects": [
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 100,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 101,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 102,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 103,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 104,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 105,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 106,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 107,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 108,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 109,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 110,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 111,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 112,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 113,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 114,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 115,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 116,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 117,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 118,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 119,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 120,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 121,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 122,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 123,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 124,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 125,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 126,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 127,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 128,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 129,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 130,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 131,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 132,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 133,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 134,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 135,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 136,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 137,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 138,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 139,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 140,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 141,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 142,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 143,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 144,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 145,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 146,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 147,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 148,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 149,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 150,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 151,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        }
+      ],
+      "GUID": "51ba3f"
+    },
+    {
+      "Name": "DeckCustom",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.26030266,
+        "posZ": 5.5,
+        "rotX": 3.3277982E-07,
+        "rotY": 180.000031,
+        "rotZ": 180.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "ContainedObjects": [
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 100,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 101,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 102,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 103,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 104,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 105,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 106,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 107,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 108,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 109,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 110,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 111,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 112,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 113,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 114,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 115,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 116,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 117,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 118,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 119,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 120,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 121,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 122,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 123,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 124,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 125,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 126,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 127,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 128,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 129,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 130,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 131,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 132,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 133,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 134,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 135,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 136,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 137,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 138,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 139,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 140,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 141,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 142,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 143,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 144,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 145,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 146,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 147,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 148,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 149,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 150,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        },
+        {
+          "Name": "Card",
+          "Transform": {
+            "posX": 3.51765266E-08,
+            "posY": 1.04493034,
+            "posZ": -1.02593845E-07,
+            "rotX": 7.98360134E-07,
+            "rotY": 180.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "CardID": 151,
+          "SidewaysCard": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "ContainedObjects": [],
+          "GUID": "51ba3f"
+        }
+      ],
+      "GUID": "b09d17"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 15.0,
+        "posY": 1.03171337,
+        "posZ": -11.5,
+        "rotX": -1.09414529E-07,
+        "rotY": 180.000046,
+        "rotZ": 5.4440784E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 151,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5e0002"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 15.0,
+        "posY": 1.03171349,
+        "posZ": -8.0,
+        "rotX": 1.18673242E-07,
+        "rotY": 180.000031,
+        "rotZ": -8.727194E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 150,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f29d95"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 15.0,
+        "posY": 1.03171337,
+        "posZ": -4.5,
+        "rotX": 2.28790768E-07,
+        "rotY": 180.000031,
+        "rotZ": -1.151135E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 149,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "473527"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 15.0,
+        "posY": 1.03171349,
+        "posZ": -1.0,
+        "rotX": -6.805224E-08,
+        "rotY": 180.000031,
+        "rotZ": 9.557705E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 148,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a73b91"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 12.5,
+        "posY": 1.03171349,
+        "posZ": -11.5,
+        "rotX": -1.66744442E-07,
+        "rotY": 180.000031,
+        "rotZ": 9.66209441E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 147,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "95769e"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 12.5,
+        "posY": 1.03171349,
+        "posZ": -8.0,
+        "rotX": -1.12092366E-07,
+        "rotY": 180.000031,
+        "rotZ": -2.01423767E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 146,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "244c63"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 12.5,
+        "posY": 1.03171349,
+        "posZ": -4.5,
+        "rotX": 2.837476E-07,
+        "rotY": 180.000031,
+        "rotZ": 7.254235E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 145,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cad900"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 12.5,
+        "posY": 1.0317136,
+        "posZ": -1.0,
+        "rotX": -1.920251E-07,
+        "rotY": 180.000031,
+        "rotZ": -2.812157E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 144,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7a373b"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 9.999978,
+        "posY": 1.03171349,
+        "posZ": -11.5000067,
+        "rotX": -2.82402965E-07,
+        "rotY": 180.00058,
+        "rotZ": -1.60834048E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 143,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4453ac"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 9.999455,
+        "posY": 1.03171325,
+        "posZ": -8.008014,
+        "rotX": 3.8977376E-07,
+        "rotY": 180.01207,
+        "rotZ": -1.15778334E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 142,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "29d4e7"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 9.999978,
+        "posY": 1.03171349,
+        "posZ": -4.50000668,
+        "rotX": -1.88077948E-07,
+        "rotY": 180.00058,
+        "rotZ": 4.52628569E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 141,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a89ec6"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 9.999455,
+        "posY": 1.03171349,
+        "posZ": -1.008013,
+        "rotX": -3.578E-07,
+        "rotY": 180.009155,
+        "rotZ": 4.745278E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 140,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ec0b28"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 7.499782,
+        "posY": 1.03171349,
+        "posZ": -11.5001564,
+        "rotX": -2.74025126E-07,
+        "rotY": 180.0063,
+        "rotZ": -2.18001631E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 139,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "88a813"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 7.499455,
+        "posY": 1.03171337,
+        "posZ": -8.008016,
+        "rotX": 3.44617831E-07,
+        "rotY": 180.01033,
+        "rotZ": 5.726978E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 138,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d9a434"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 7.5,
+        "posY": 1.0317136,
+        "posZ": -4.5,
+        "rotX": -1.69186791E-07,
+        "rotY": 180.000122,
+        "rotZ": 2.18634341E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 137,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "35cca0"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 7.5,
+        "posY": 1.0317136,
+        "posZ": -0.9999999,
+        "rotX": 2.931569E-07,
+        "rotY": 180.025879,
+        "rotZ": -3.16893136E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 136,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9dd0e0"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 5.00000572,
+        "posY": 1.0317136,
+        "posZ": -11.49999,
+        "rotX": 9.364506E-09,
+        "rotY": 179.999741,
+        "rotZ": 1.90453562E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 135,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cd3b86"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 4.98590565,
+        "posY": 1.03171349,
+        "posZ": -8.00259,
+        "rotX": -3.43116824E-07,
+        "rotY": 180.33136,
+        "rotZ": -3.693021E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 134,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b32b4d"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 5.000007,
+        "posY": 1.03171349,
+        "posZ": -4.499996,
+        "rotX": 1.19809812E-07,
+        "rotY": 180.007813,
+        "rotZ": -1.0692689E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 133,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a9e408"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 5.001785,
+        "posY": 1.03171337,
+        "posZ": -0.999999166,
+        "rotX": -5.14299563E-06,
+        "rotY": 180.038208,
+        "rotZ": -9.952045E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 132,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "2352a0"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 2.5,
+        "posY": 1.03171349,
+        "posZ": -11.5,
+        "rotX": 2.11505778E-07,
+        "rotY": 180.030182,
+        "rotZ": 7.515707E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 131,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c2bb23"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 2.499495,
+        "posY": 1.03171337,
+        "posZ": -8.007884,
+        "rotX": -2.873547E-07,
+        "rotY": 180.025726,
+        "rotZ": 5.026454E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 130,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b456dc"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 2.5,
+        "posY": 1.0317136,
+        "posZ": -4.499999,
+        "rotX": 1.77749826E-07,
+        "rotY": 180.016418,
+        "rotZ": 3.71509344E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 129,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "62bb9a"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 2.49999666,
+        "posY": 1.03171337,
+        "posZ": -1.00001609,
+        "rotX": -7.778461E-08,
+        "rotY": 179.985168,
+        "rotZ": 1.6623369E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 128,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "6dbc0f"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -2.13040257E-05,
+        "posY": 1.0317136,
+        "posZ": -11.5000067,
+        "rotX": -1.72754753E-07,
+        "rotY": 180.000534,
+        "rotZ": 2.57239748E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 127,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4f0533"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -0.0005444611,
+        "posY": 1.03171325,
+        "posZ": -8.008014,
+        "rotX": -3.576351E-07,
+        "rotY": 180.012039,
+        "rotZ": -7.30099146E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 126,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "208b68"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -1.18780008E-08,
+        "posY": 1.03171337,
+        "posZ": -4.5,
+        "rotX": 6.294957E-08,
+        "rotY": 179.999985,
+        "rotZ": 4.678026E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 125,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "2ab702"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -0.0005456831,
+        "posY": 1.03171349,
+        "posZ": -1.00801229,
+        "rotX": -4.842497E-07,
+        "rotY": 180.02356,
+        "rotZ": -5.604703E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 124,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d8a752"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -2.5,
+        "posY": 1.03171349,
+        "posZ": -11.5,
+        "rotX": 2.93173263E-09,
+        "rotY": 179.999985,
+        "rotZ": 1.17778676E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 123,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d30b56"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -2.50000763,
+        "posY": 1.03171372,
+        "posZ": -8.000008,
+        "rotX": -1.58965946E-07,
+        "rotY": 180.000244,
+        "rotZ": 1.24454061E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 122,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ec5551"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -2.500239,
+        "posY": 1.03171349,
+        "posZ": -4.500174,
+        "rotX": -4.76139945E-07,
+        "rotY": 180.006927,
+        "rotZ": 1.43553052E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 121,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f3be30"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -2.50054669,
+        "posY": 1.03171337,
+        "posZ": -1.00800991,
+        "rotX": 8.767265E-08,
+        "rotY": 180.014069,
+        "rotZ": -2.786602E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 120,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "496b74"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -5.0,
+        "posY": 1.0317136,
+        "posZ": -11.5,
+        "rotX": 1.68593424E-08,
+        "rotY": 179.999985,
+        "rotZ": 4.038407E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 119,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "518357"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -5.0,
+        "posY": 1.03171349,
+        "posZ": -8.0,
+        "rotX": -3.90166718E-07,
+        "rotY": 179.999985,
+        "rotZ": -4.540702E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 118,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ab21e2"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -5.0,
+        "posY": 1.0317136,
+        "posZ": -4.5,
+        "rotX": 3.05975675E-07,
+        "rotY": 179.999985,
+        "rotZ": 4.58796762E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 117,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "09c901"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -5.0,
+        "posY": 1.0317136,
+        "posZ": -1.0,
+        "rotX": -1.23315431E-07,
+        "rotY": 179.999985,
+        "rotZ": -1.34165518E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 116,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4258c1"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -7.5,
+        "posY": 1.03171349,
+        "posZ": -11.499999,
+        "rotX": 2.158826E-07,
+        "rotY": 179.999985,
+        "rotZ": 4.87468753E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 115,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5bc750"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -7.500544,
+        "posY": 1.03171337,
+        "posZ": -8.008008,
+        "rotX": 2.49990926E-08,
+        "rotY": 180.009018,
+        "rotZ": 2.8172002E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 114,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "361d79"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -7.5,
+        "posY": 1.03171349,
+        "posZ": -4.5,
+        "rotX": 2.31740643E-07,
+        "rotY": 179.999985,
+        "rotZ": -1.8321181E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 113,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "8fcff9"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -7.5,
+        "posY": 1.03171349,
+        "posZ": -1.0,
+        "rotX": 1.976144E-07,
+        "rotY": 179.999985,
+        "rotZ": -6.783779E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 112,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "74acac"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -10.0,
+        "posY": 1.03171349,
+        "posZ": -11.5,
+        "rotX": 1.89039525E-07,
+        "rotY": 179.999985,
+        "rotZ": -1.32555087E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 111,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cc94af"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -10.0,
+        "posY": 1.03171349,
+        "posZ": -8.0,
+        "rotX": -1.9069968E-07,
+        "rotY": 179.999985,
+        "rotZ": 5.52049464E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 110,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d7b4f0"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -10.0,
+        "posY": 1.03171349,
+        "posZ": -4.5,
+        "rotX": -2.20023271E-08,
+        "rotY": 179.999985,
+        "rotZ": -5.924961E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 109,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "957ec6"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -10.0,
+        "posY": 1.03171349,
+        "posZ": -1.0,
+        "rotX": 3.41217856E-07,
+        "rotY": 179.999985,
+        "rotZ": 4.84011551E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 108,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e07b28"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.03171349,
+        "posZ": -11.5,
+        "rotX": 9.133573E-08,
+        "rotY": 179.999985,
+        "rotZ": 3.307687E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 107,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7d210b"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.03171349,
+        "posZ": -8.0,
+        "rotX": -1.45222884E-07,
+        "rotY": 179.999985,
+        "rotZ": 5.803777E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 106,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5e04b7"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.03171337,
+        "posZ": -4.5,
+        "rotX": -3.10936237E-08,
+        "rotY": 179.999985,
+        "rotZ": 1.974858E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 105,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3bb326"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.03171337,
+        "posZ": -1.0,
+        "rotX": -3.31783951E-07,
+        "rotY": 179.999985,
+        "rotZ": 1.56793533E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 104,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f1200b"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -15.0,
+        "posY": 1.03171337,
+        "posZ": -11.499999,
+        "rotX": 1.80862855E-07,
+        "rotY": 179.999985,
+        "rotZ": 2.41203555E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 103,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4448a6"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -15.0,
+        "posY": 1.0317136,
+        "posZ": -8.0,
+        "rotX": -2.35440154E-07,
+        "rotY": 179.999985,
+        "rotZ": -1.8703561E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 102,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "739031"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -15.0,
+        "posY": 1.03171337,
+        "posZ": -4.5,
+        "rotX": 1.778717E-07,
+        "rotY": 179.999985,
+        "rotZ": 5.95844369E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 101,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "1cc6a3"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -15.0,
+        "posY": 1.03171349,
+        "posZ": -1.0,
+        "rotX": 1.90513134E-07,
+        "rotY": 179.999985,
+        "rotZ": -4.39977526E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "CardID": 100,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "http://i.imgur.com/7bhIEiv.png",
+          "BackURL": "http://i.imgur.com/0SHSYjE.png",
+          "NumWidth": 8,
+          "NumHeight": 7,
+          "BackIsHidden": false
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "15ee8c"
+    }
+  ],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  }
+}

@@ -1,0 +1,1 @@
+This is a standard deck of playing cards designed by Eugene Trounev for the KDE project, and released into the public domain in 2012. A deck can be saved to your chest and spawned into any game as an alternative playing card design.

@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+#instructions {
+  color: white;
+  font-family: sans-serif;
+  font-size: 75%;
+  text-align: left;
+}

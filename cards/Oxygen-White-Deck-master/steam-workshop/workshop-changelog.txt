@@ -1,0 +1,22 @@
+v1.0: Initial Release
+
+Cards from KDE's Oxygen White deck used as-is - chopped up, prepared for export, rendered to individual PNGs and arranged as an atlas.
+
+Known issues:
+
+- Some overlapping or mispositioned graphics
+- Some inconsistent design
+
+
+v1.1: The Cosmetic Update
+
+- Cleaner Aces
+- Consistent design of Sevens
+- Consistent decorations on court cards
+- Consistent positioning of pips
+
+
+v1.2: The Funny Update
+
+- Added Jokers from original deck design
+

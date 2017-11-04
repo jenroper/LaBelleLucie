@@ -1,0 +1,76 @@
+body {
+  background-image: url("backgrounds\\darkgreen.jpg");
+  margin: 40px;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+#dealDiv {
+  grid-column-start: 1;
+}
+#dealsRemainingDiv {
+  grid-column-start: 2;
+}
+#found-0 {
+  grid-column-start: 5;
+}
+#found-1 {
+  grid-column-start: 6;
+}
+#found-2 {
+  grid-column-start: 7;
+}
+#found-3 {
+  grid-column-start: 8;
+}
+.emptyFoundation {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 10px;
+  border-color: #393939;
+  box-shadow: 2px 2px black;
+  z-index: 0;
+}
+#dealsRemaining {
+  color: white;
+  font-family: sans-serif;
+  font-size: 125%;
+  text-align: left;
+}
+#tableaus {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+.tab {
+  height: 225px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  color: white;
+  align-content: left;
+}
+
+footer {
+  left: 0;
+  top: 0;
+  right: 90;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#cardLabel {
+  color: white;
+  font-family: sans-serif;
+  font-size: 125%;
+  text-align: left;
+}
+
+#gameInfo {
+  color: white;
+  font-family: sans-serif;
+  font-size: 125%;
+  text-align: right;
+}

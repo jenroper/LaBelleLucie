@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>Solitaire</title>
+  <link rel="stylesheet" href="labellelucie.css">
+  <script src="labellelucie.js"></script>
+</head>
+<body>
+  <header></header>
+  <div class="game">
+    <div id="dealDiv">
+      <img id="deal" class="emptyFoundation" src="cards\redeal.png" height="135" width="96" onclick="reDeal(event)">
+    </div>
+    <div id="dealsRemainingDiv">
+      <p id="dealsRemaining">
+        Deals Left:  Infinity
+      </p>
+    </div>
+    <div id="found-0" class="foundation">
+    </div>
+    <div id="found-1" class="foundation">
+    </div>
+    <div id="found-2" class="foundation">
+    </div>
+    <div id="found-3" class="foundation">
+    </div>
+  </div>
+  <div id="tableaus">
+  </div>
+  <footer>
+    <p id="cardLabel"></p>
+    <aside id="gameInfo">
+      <p id="gameLabel">La Belle Lucie</p>
+      <p id="stats">
+        <button id="reset" onclick="resetStats(event)">Reset Stats</button>
+        1 game played, 0 wins (0%)
+      </p>
+    </aside>
+  </footer>
+</body>
+</html>
