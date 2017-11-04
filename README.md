@@ -2,14 +2,14 @@
 ## How to Play
 This code can be played in any modern web browser, although I tested it with Chrome.  Just open labellelucie.html.
 
-The tableau consists of seventeen fans of three cards each with a single card counting as an eighteenth fan.
-Only the top card of each fan can be played. 
-Any aces can be moved to the foundations, which are built from there.
-Cards are moved to the foundations by suit in ascending order (Ace, 2, ... Queen, King).
-Cards are moved to other fans by suit in descending order (example:  8 of clubs could be played on the 9 of clubs).
-When a fan becomes empty, it cannot be filled again.
-Once all possible moves have been exhausted, the entire tableau is reshuffled and redealt, again in fans of three with the remainder counting as a separate fan. There are only three reshuffles allowed in the game.
-The game is considered won when all cards are transferred into the foundations
+* The tableau consists of seventeen fans of three cards each with a single card counting as an eighteenth fan.
+* Only the top card of each fan can be played. 
+* Any aces can be moved to the foundations, which are built from there.
+* Cards are moved to the foundations by suit in ascending order (Ace, 2, ... Queen, King).
+* Cards are moved to other fans by suit in descending order (example:  8 of clubs could be played on the 9 of clubs).
+* When a fan becomes empty, it cannot be filled again.
+* Once all possible moves have been exhausted, the entire tableau is reshuffled and redealt, again in fans of three with the remainder counting as a separate fan. There are only three reshuffles allowed in the game.
+* The game is considered won when all cards are transferred into the foundations
 
 ## About
 This is my first JavaScript application.  I learned HTML5 and JavaScript, and decided to apply what I learned to a version of solitaire that I like to play.  There are a few issues I need to work out like handling window resizing and a few graphical glitches, but it otherwise works fine.
