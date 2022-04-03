@@ -1,4 +1,7 @@
 # La Belle Lucie
+
+Note: This project stems from me teaching myself plain javascript in 2017.
+
 ## How to Play
 This code can be played in any modern web browser, although I tested it with Chrome.  Just open labellelucie.html.
 
